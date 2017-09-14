@@ -1,0 +1,223 @@
+/*the body style apply to the style of body part of the webpage*/
+/*the header style apply to the style of the header which is at the top of the page*/
+/*the float right mean make the picture located at right side of webpage.*/ 
+/* ------------------------------
+global styles
+------------------------------ */
+
+body
+{
+	margin: 1cm 1cm 1cm 1cm;
+	padding: 1cm 1cm 1cm 1cm; /*Padding defines the space area between border and container*/
+	font: 90% arial, hevetica, sans-serif;
+	text-align: center;
+	color: #eee;
+	background: #eee url(Li.jpg)  0 0;
+}
+
+a:link { color: #99ccff; }
+a:visited { color: #99CCFF; }/*Visited refers to a tab has already been visited. this "color" means the color demonstration of link tabs after they are visited.*/
+a:focus { color: #000; }/*focus refers to concentrate on a certain tab. this "color" refers to the color of link tabs after they have been clicked.*/
+a:hover { color: #000; }/*hover means the moment when people stop moving their mouses on a tab. This "color" refers to the color of letters of link tabs when people move their mouses over the tabs*/
+a:active { color: #FFFFFF; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 1em; }
+
+h2
+{
+	color: #eee;
+	padding-left: 50px;
+	font: 150% georgia, times, "times new roman", serif;
+}
+
+h2 a { text-decoration: none; }
+
+h3
+{
+	color: #99ccff;
+	font: 150% georgia, times, "times new roman", serif;	
+}
+
+/* ------------------------------
+container styles/*It contains elements of the webpage. We could change the style of the page in those codes.*
+------------------------------ */
+
+#container
+{
+	margin: 0em auto;
+	width: 1024px;
+	text-align: left;
+	background: #353535;
+	border: 5px solid #ddd;
+}
+
+/* ------------------------------
+header styles
+------------------------------ */
+
+#header
+{
+	height: 50px;
+	width: 100%;
+	position: relative;/* 'postion: relative' refers to correctly put the head title into the header*/ 
+	background: url(buff.jpg) repeat 0 0;
+	border-bottom: 1px solid #bbb;
+}
+
+#header h1
+{
+	position: absolute;
+	Left:60px;
+	top:10px;
+}
+
+#skipmenu
+{
+	position: absolute;
+	left: 0;
+	top: 18px;
+	width: 960px;
+	text-align: right;
+}
+
+#skipmenu2
+{
+	position: absolute;
+	left: 0;
+	top: 19px;
+	width: 898px;
+	text-align: right;
+}
+
+/*In this case, the skipmenu refers to the location of button "skip to content"*/ 
+#skipmenu a
+{
+	color: #ddd;
+	text-decoration: none;
+}
+
+#skipmenu2 a
+{
+	color: #ddd;
+	text-decoration: none;
+}
+ 
+#search
+{
+	padding-left:640px;
+}
+
+/* ------------------------------
+mainnav styles
+------------------------------ */
+
+#mainnav
+{
+	background: #7777FF;
+	color: #272900;
+	padding: 2px 0;
+	margin-bottom: 25px;
+}
+
+#mainnav ul
+{
+	margin: 5px 0 5px 25px;
+	padding: 0;
+	list-style-type: none;
+}
+
+#mainnav li
+{
+	display: inline;
+	padding: 0 15px;
+}
+
+#mainnav li a
+{
+	text-decoration: none;
+	color: #272900;
+}
+
+#mainnav li a:hover
+{
+	text-decoration: none;
+	color: #fff;
+	background-color: #272900;
+}
+
+/* ------------------------------
+menu styles
+------------------------------ */
+
+#menu
+{
+	float: right;
+	width: 170px;
+	border-left: 1px solid #77ffff;
+	padding-left: 25px;
+}
+
+#menu ul
+{
+	margin: 1em 0;
+	padding: 0;
+}
+
+#menu ul li
+{
+	margin: 0 0 1.2em;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+/* ------------------------------
+contents styles
+------------------------------ */
+
+#contents
+{
+	float: middle;
+	width: 775px;
+	margin: 0 0 0 20px;
+}
+
+#contents p { line-height: 165%;}
+.blogentry { border-bottom: 0px solid #C5C877; }
+/* "." is a kind of placeholder and provide space for contents*/
+.blogentry ul
+{
+	text-align: right;
+	margin: 1em 0;
+	padding: 0;
+	font-size: 95%;
+}
+
+.blogentry li
+{
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 7px;
+}
+
+.imagefloat
+{
+	float: left;
+	padding: 1px;
+	border: 0px solid #aaa;
+	margin: 4px 0px 0px 6px;
+}
+
+/* ------------------------------
+footer styles
+------------------------------ */
+
+#footer
+{
+	clear: both;
+	color: #000;
+	text-align: right;
+	font-size: 75%;
+	background: #ccc;
+	padding: 0px;
+}

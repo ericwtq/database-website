@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="style2.css" type="text/css" media="screen">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <title>Computer Noobs</title>
+    </head>
+    <body>
+		<div id="container">
+		<div id="header" title="sitename">
+		<div id="skipmenu"><a href="ppp.html">Log out</a></div>
+		<div id="skipmenu2"><a href="previous.php">My Account</a></div>
+		<img class="imagefloat" src="psyduck.jpg" alt="" width="40" height="40">
+			<h1>
+				Computer Sale !
+			</h1>
+		</div>
+		<div id="mainnav">
+			<ul>
+				<li><a href="search.php">Search Products</a></li>
+				<li><a href="https://www.google.com/maps/@40.4437327,-79.954623,17z">We are Here</a></li>
+				<li><a href="http://www.weibo.com/u/1908559525">Contact Us (if you forget password or have any questions)</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="blogentry">
+                <h2>order history</h2>
+		</div>
+        <table border="1" style="margin: 0 auto;" >
+            <tr>
+                 <th>Order_ID</th>
+                 <th>product</th>
+                 <th>price</th>
+                 <th>quantity</th>
+                 <th>buyer</th>
+            </tr>
+            <tr><td>4765</td><td>Apple iMac 21.5</td><td>1499</td><td>1</td><td>yh</td></tr><tr><td>4765</td><td>Intel NUC6I5SYH</td><td>638</td><td>2</td><td>yh</td></tr>        </table>
+        
+        <h2>your information</h2>
+        <form method="post" action="/DBproject/view/previous.php">
+        <table border="1" style="margin: 0 auto;" >
+            <tr>
+                 <th>id</th>
+                 <th>name</th>
+                 <th>city</th>
+                 <th>state</th>
+                 <th>zipcode</th>
+            </tr>
+        <tr><td>wtq1</td><td>wtq1</td><td>pitt1</td><td>pa1</td><td>15232</td><tr>            <tr>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+            </tr>   
+            <tr>
+                <th>street</th>
+                <th>gender</th>
+                <th>password</th>
+                <th>phone</th>
+                <th>email</th>
+            </tr>
+            <td>fifth1</td><td>male1</td><td>123</td><td>1234567890</td><td>wtq@pp.com</td></tr>            <tr>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+                <td><input type="text" name="upate[]" value=""/></td>
+				<td><input type="submit" name="update" value="update"/></td>
+            </tr>
+            
+        </table>
+
+       
+        </form>
+		<div>
+		<p>
+		
+		</p>
+		</div>
+		<div id="footer">
+			Computer Noobs 2016
+		</div>
+    </body>
+</html>

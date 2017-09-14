@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="style2.css" type="text/css" media="screen">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <title>Computer Noobs</title>
+    </head>
+    <body>
+	<div id="container">
+		<div id="header" title="sitename">
+		<div id="skipmenu"><a href="search.php">Log out</a></div>
+		<div id="skipmenu2"><a href="previous.php">My Account</a></div>
+		<img class="imagefloat" src="psyduck.jpg" alt="" width="40" height="40">
+		<h1>
+			Computer Sale !
+		</h1>
+	</div>
+	<div id="mainnav">
+		<ul>
+			<li><a href="search.php">Search Products</a></li>
+			<li><a href="https://www.google.com/maps/@40.4437327,-79.954623,17z">We are Here</a></li>
+			<li><a href="http://www.weibo.com/u/1908559525">Contact Us (if you forget password or have any questions)</a></li>
+		</ul>
+<!-- <li> defines a list item and be used in ordered lists, unordered lists and menu lists.-->
+	</div>
+        <form method='post' action='order.php'>
+		<table border='1'style="margin: 0 auto;">
+                 <tr>
+                 <th>Model</th>
+                 <th>Price</th>
+                 </tr><tr><td><input type='checkbox' name='choose[]' value='HP EliteBook 820'/>HP EliteBook 820</td><td>1329</td></tr><tr><td><input type='checkbox' name='choose[]' value='DELL Latitude E7270'/>DELL Latitude E7270</td><td>1199</td></tr><tr><td><input type='checkbox' name='choose[]' value='DELL XPS 13'/>DELL XPS 13</td><td>1049</td></tr><tr><td><input type='checkbox' name='choose[]' value='ThinkPad X1 Carbon'/>ThinkPad X1 Carbon</td><td>1439</td></tr><tr><td><input type='checkbox' name='choose[]' value='Lenovo Yoga 460'/>Lenovo Yoga 460</td><td>1106</td></tr><tr><td><input type='checkbox' name='choose[]' value='ASUS UX305'/>ASUS UX305</td><td>1199</td></tr><tr><td><input type='checkbox' name='choose[]' value='Acer Travelmate P6'/>Acer Travelmate P6</td><td>999</td></tr><tr><td><input type='checkbox' name='choose[]' value='Acer Swift 7'/>Acer Swift 7</td><td>1099</td></tr><tr><td><input type='checkbox' name='choose[]' value='Microsoft Surface Pro 4'/>Microsoft Surface Pro 4</td><td>1299</td></tr><tr><td><input type='checkbox' name='choose[]' value='HP EliteBook 840'/>HP EliteBook 840</td><td>1429</td></tr><tr><td><input type='checkbox' name='choose[]' value='HP Envy 15t'/>HP Envy 15t</td><td>649</td></tr><tr><td><input type='checkbox' name='choose[]' value='DELL Latitude 12 Rugged'/>DELL Latitude 12 Rugged</td><td>3399</td></tr><tr><td><input type='checkbox' name='choose[]' value='DELL Latitude 14 Rugged'/>DELL Latitude 14 Rugged</td><td>3499</td></tr><tr><td><input type='checkbox' name='choose[]' value='DELL Inspirion 13 5000'/>DELL Inspirion 13 5000</td><td>599</td></tr><tr><td><input type='checkbox' name='choose[]' value='DELL Precision 3510'/>DELL Precision 3510</td><td>1249</td></tr><tr><td><input type='checkbox' name='choose[]' value='Apple MacBook Pro 13'/>Apple MacBook Pro 13</td><td>1499</td></tr><tr><td><input type='checkbox' name='choose[]' value='Apple MacBook Air 13'/>Apple MacBook Air 13</td><td>1199</td></tr><tr><td></td><td><input type='submit' Value='buy' name='buy'/></td></tr></table></form>        
+        
+	<div id="search">
+        <form method="post" action="/DBproject/view/search.php">
+        <p>
+            <select name="kind">
+                <option>desktop</option>
+                <option>laptop</option>
+            </select>
+			<select name="cate">
+                <option>cpu</option>
+                <option>model</option>
+            </select>
+        </p>
+        <p><input type="text" value="" name="keyword" size="50"/><input type="submit" value="submit"></p>
+        </form>
+	</div>
+		
+    <div id="footer">
+		Computer Noobs 2016
+	</div>
+    </body>
+</html>
